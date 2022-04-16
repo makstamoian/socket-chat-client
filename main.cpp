@@ -6,13 +6,11 @@
 #include <iostream>
 
 using namespace std;
-#define ADDRESS "192.168.0.15"
+#define ADDRESS "127.0.0.1"
 #define PORT 8228
 #define BUFFER_SIZE 1024
 
 int main(int argc, char const *argv[]) {
-
-    cout << "Connecting to 85.253.138.7, Estonian Server" << endl;
 
     int client;
     struct sockaddr_in serv_addr;
@@ -40,7 +38,7 @@ int main(int argc, char const *argv[]) {
 
     char buffer[BUFFER_SIZE];
     cout << "Waiting for server confirmation..." << endl;
-    cout << "Connection established..!" << endl << endl << "All messages are encrypting with Cesar cipher)))" << endl;
+    cout << "Connection established..!" << endl << endl << "All messages are encrypting with Cesar cipher(not very secure)))))" << endl;
     cout << "You can close connection by stop running programm!)" << endl;
 
     while (true) {
